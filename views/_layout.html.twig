@@ -38,17 +38,6 @@
                         </ul>
                     </li>
                     {% endif %}
-                    <li>
-                        {% if not users.user %}
-                            <a href="/login">Logowanie</a>
-                        {% else %}
-                            <a href="/objects/{{ users.user.ID }}" class="dropdown-toggle" data-toggle="dropdown">{{ users.user.email }} <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/objects/{{ users.user.ID }}/edit">Konto</a></li>
-                                <li><a href="/logout">Wyloguj</a></li>
-                            </ul>
-                        {% endif %}
-                    </li>
                 </ul>
 
             </div>
