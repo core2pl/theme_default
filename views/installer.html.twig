@@ -100,19 +100,19 @@
 {% endif %}
 {% if action == 'user' %}
     <div class="well">
-        <form class="bs-example form-horizontal" action="/install/summary">
+        <form class="bs-example form-horizontal" action="/install/user" method="POST">
             <fieldset>
                 <legend>Administrator (krok 3 z 3)</legend>
                 <div class="form-group">
                     <label for="inputEmail" class="col-lg-2 control-label">E-mail:</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="" name="email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPssword" class="col-lg-2 control-label">Hasło:</label>
                     <div class="col-lg-10">
-                        <input type="password" class="form-control" id="inputEmail" placeholder="">
+                        <input type="password" class="form-control" id="inputEmail" placeholder="" name="password">
                     </div>
                 </div>
                 <div class="form-group">
